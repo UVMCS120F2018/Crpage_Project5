@@ -7,4 +7,5 @@ add_executable(Crpage_Project5 main.cpp
         Card.cpp
         Snack.cpp
         Deck.cpp
+        Dice.cpp
         )
