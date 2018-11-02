@@ -28,7 +28,7 @@ void Deck::shuffle() {
 }
 
 vector<vector<Card>> Deck::deal() {
-    shuffle();
+
     vector<Card> p1;
     vector<Card> p2;
     vector<Card> p3;

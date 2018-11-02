@@ -98,3 +98,6 @@ bool operator > (Card &c1, Card &c2){
     }
 }
 
+bool operator == (Card &c1, Card &c2){
+    return ((c1.get_suit() == c2.get_suit()) and (c1.get_value() == c2.get_value()));
+}

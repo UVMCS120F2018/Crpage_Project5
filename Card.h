@@ -36,6 +36,8 @@ public:
     friend bool operator < (Card &c1, Card &c2);
     friend bool operator > (Card &c1, Card &c2);
     friend int operator + (Card &c1, Card &c2);
+    friend bool operator == (Card &c1, Card &c2);
+
 };
 
 
