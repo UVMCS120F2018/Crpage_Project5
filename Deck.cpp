@@ -6,11 +6,11 @@
 
 
 Deck::Deck() {
-    for(int i: card_values){
-            cards.emplace_back(i, HEARTS);
-            cards.emplace_back(i, CLUBS);
-            cards.emplace_back(i, DIAMONDS);
-            cards.emplace_back(i, SPADES);
+    for(int i: Card_Games::card_values){
+            cards.emplace_back(i, Card_Games::Suit::HEARTS);
+            cards.emplace_back(i, Card_Games::Suit::CLUBS);
+            cards.emplace_back(i, Card_Games::Suit::DIAMONDS);
+            cards.emplace_back(i, Card_Games::Suit::SPADES);
         }
 }
 

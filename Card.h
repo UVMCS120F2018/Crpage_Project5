@@ -7,11 +7,12 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 using namespace std;
 
 namespace Card_Games{
     enum Suit{HEARTS, CLUBS, DIAMONDS, SPADES};
-    vector<int> card_values = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+    extern vector<int> card_values;
 }
 
 using namespace Card_Games;
@@ -22,14 +23,15 @@ protected:
     int value;
     bool face_card;
     bool trump;
-    Suit suit;
+    Card_Games::Suit suit;
 
 public:
-    Card(int value, Suit suit);
+    Card(int value, Card_Games::Suit suit);
     int get_value();
     bool is_face_card();
     bool is_trump();
-    Suit get_suit();
+    Card_Games::Suit get_suit();
+    void print();
 
     friend bool operator < (Card &c1, Card &c2);
     friend bool operator > (Card &c1, Card &c2);

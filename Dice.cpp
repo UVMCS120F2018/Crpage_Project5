@@ -3,6 +3,7 @@
 //
 
 #include "Dice.h"
+#include <algorithm>
 
 Dice::Dice(int faces, int number) {
     this -> faces = faces;
